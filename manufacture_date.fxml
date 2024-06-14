@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.ManufacturingDate">
+    <children>
+        <Label layoutX="170.0" layoutY="28.0" prefHeight="17.0" prefWidth="217.0" text="MANUFACTURING DATE">
+            <font>
+                <Font name="Bodoni MT Black Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="enter" layoutX="36.0" layoutY="109.0" prefHeight="18.0" prefWidth="187.0" text="Enter the manufacture date :">
+            <font>
+                <Font name="Book Antiqua" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="submit" layoutX="156.0" layoutY="186.0" mnemonicParsing="false" onAction="#getDate" text="submit">
+            <font>
+                <Font name="Verdana Bold Italic" size="14.0" />
+            </font>
+        </Button>
+      <DatePicker fx:id="eg" layoutX="233.0" layoutY="105.0" promptText="06/09/2023" />
+      <Label fx:id="label" layoutX="25.0" layoutY="271.0" prefHeight="18.0" prefWidth="289.0" text="RESULT" />
+      <ImageView fitHeight="150.0" fitWidth="210.0" layoutX="360.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/WhatsApp Image 2024-01-06 at 2.11.27 PM.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
